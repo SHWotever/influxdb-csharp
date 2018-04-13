@@ -21,7 +21,7 @@ namespace InfluxDB.LineProtocol.Client
                         string database,
                         string username = null,
                         string password = null)
-            :base(serverBaseAddress, database, username, password)
+            : base(serverBaseAddress, database, username, password, null)
         {
             if (serverBaseAddress == null)
                 throw new ArgumentNullException(nameof(serverBaseAddress));
